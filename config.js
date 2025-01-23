@@ -8,8 +8,8 @@ module.exports = {
   setupFilePath: './commands/setup.json',
   commandsDir: './commands',  
   embedColor: "#1db954",
-  activityName: "YouTube Music", 
-  activityType: "LISTENING",  // Available activity types : LISTENING , PLAYING
+  activityName: "", 
+  activityType: "",  // Available activity types : LISTENING , PLAYING
   SupportServer: "https://discord.gg/QHzdUj2VqN",
   embedTimeout: 5, 
   errorLog: "", 
