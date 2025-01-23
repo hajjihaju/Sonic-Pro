@@ -255,7 +255,7 @@ module.exports = {
   support: {
     embed: {
         authorName: "Support Server",
-        description: "➡️ **Join our Discord server for support and updates:**\n- Discord - {supportServerLink}\n\n➡️",
+        description: "➡️ **Join our Discord server for support and updates:**\n- Discord - {supportServerLink}",
         error: "Error",
         errorDescription: "- An error occurred while processing your request."
     }
