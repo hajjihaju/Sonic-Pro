@@ -1,5 +1,5 @@
 module.exports = {
-    footer: "Developed by SSRR | Prime Music v1.2",
+    footer: "Sonic V.1.2",
     ping: {
       description: "Check the bot latency",
       response: "Pinging...",
@@ -8,7 +8,7 @@ module.exports = {
         responseTime: "- Bot Response Time : **{latency}ms**",
         websocketPing: "- WebSocket Ping : **{ping}ms**",
         uptime: "- Uptime : **{uptime}**",
-        footer: "Developed by SSRR | Prime Music v1.2"
+        footer: "Sonic V.1.2"
       }
     },
     addsong: {
@@ -27,7 +27,7 @@ module.exports = {
     embed: {
         noPlaylistsFound: "No Playlists Found",
         noPlaylistsFoundDescription: "- No public playlists are currently available.",
-        createdBy: "Created by: {userId}",
+        createdBy: "Spella",
         serverName: "Server: {serverName}",
         songs: "Songs: **{songCount}**",
         publicPlaylistsTitle: "Public Playlists (Page {currentPage}/{totalPages})",
@@ -255,7 +255,7 @@ module.exports = {
   support: {
     embed: {
         authorName: "Support Server",
-        description: "➡️ **Join our Discord server for support and updates:**\n- Discord - {supportServerLink}\n\n➡️ **Follow us on:**\n- GitHub - {githubLink}\n- Replit - {replitLink}\n- YouTube - {youtubeLink}",
+        description: "➡️ **Join our Discord server for support and updates:**\n- Discord - {supportServerLink}\n\n➡️",
         error: "Error",
         errorDescription: "- An error occurred while processing your request."
     }
