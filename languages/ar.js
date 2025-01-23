@@ -1,5 +1,5 @@
 module.exports = {
-    footer: "SSRR تم التطوير بواسطة | Prime Music v1.2",
+    footer: "Sonic V.2.1",
     ping: {
       description: "فحص تأخير البوت",
       response: "جاري قياس التأخير...",
@@ -27,7 +27,7 @@ module.exports = {
       embed: {
           noPlaylistsFound: "لم يتم العثور على قوائم تشغيل",
           noPlaylistsFoundDescription: "- لا توجد قوائم تشغيل عامة متاحة حالياً.",
-          createdBy: "تم الإنشاء بواسطة: {userId}",
+          createdBy: "Spella",
           serverName: "السيرفر: {serverName}",
           songs: "الأغاني: **{songCount}**",
           publicPlaylistsTitle: "قوائم التشغيل العامة (صفحة {currentPage}/{totalPages})",
