@@ -99,7 +99,7 @@ function initializePlayer(client) {
                 iconURL: musicIcons.playerIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: `Sonic V.1.2`, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: `Sonic V.1.2`, iconURL:  })
             .setTimestamp()
             .setDescription(  
                 `- **Title:** [${track.info.title}](${track.info.uri})\n` +
