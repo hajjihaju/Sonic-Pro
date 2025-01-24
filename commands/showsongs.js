@@ -3,7 +3,7 @@ const { playlistCollection } = require('../mongodb.js');
 const config = require("../config.js");
 const musicIcons = require('../UI/icons/musicicons.js');
 
-async function showsongs(client, interaction, lang) {
+async function showSongs(client, interaction, lang) {
     try {
         const playlistName = interaction.options.getString('playlist');
         const userId = interaction.user.id;
