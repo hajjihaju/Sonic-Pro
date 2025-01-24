@@ -217,7 +217,7 @@ module.exports = {
         accessDenied: "Access Denied",
         noPermission: "- You do not have permission to view this private playlist.",
         noSongs: "- No songs in this playlist.",
-        songsInPlaylist: "Songs in {playlistName}",
+        songsInPlaylist: "Audios in {playlistName}",
         songsInPlaylistPage: "Songs in {playlistName} (Page {currentPage}/{totalPages})",
         errorDescription: "- An error occurred while showing the songs."
     }
