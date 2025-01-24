@@ -2,7 +2,7 @@
 
 module.exports = {
   TOKEN: "",
-  language: "",ar
+  language: "ar",
   ownerID: ["921743618316836875", ""], 
   mongodbUri : "mongodb+srv://muhammed:muhsin121@cluster0.aod2oa4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
   setupFilePath: './commands/setup.json',
