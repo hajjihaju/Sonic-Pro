@@ -16,7 +16,7 @@ async function play(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setDescription(lang.play.embed.noVoiceChannel);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -31,7 +31,7 @@ async function play(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setDescription(lang.play.embed.noLavalinkNodes);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -85,7 +85,7 @@ async function play(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setDescription(lang.play.embed.noResults);
 
             await interaction.editReply({ embeds: [errorEmbed] });
@@ -100,7 +100,7 @@ async function play(client, interaction, lang) {
                 url: config.SupportServer
             })
             .setDescription(lang.play.embed.successProcessed)
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon });
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon });
 
         await interaction.followUp({ embeds: [randomEmbed] });
 
@@ -113,7 +113,7 @@ async function play(client, interaction, lang) {
                 iconURL: musicIcons.alertIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
             .setDescription(lang.play.embed.errorProcessing);
 
         if (interaction.deferred || interaction.replied) {
