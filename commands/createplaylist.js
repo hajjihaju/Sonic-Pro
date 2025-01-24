@@ -25,7 +25,7 @@ async function createPlaylist(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setTimestamp()
                 .setDescription(lang.createplaylist.embed.playlistExistsDescription);
 
@@ -49,7 +49,7 @@ async function createPlaylist(client, interaction, lang) {
                 iconURL: musicIcons.correctIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
             .setTimestamp()
             .setDescription(lang.createplaylist.embed.playlistCreatedDescription.replace("{playlistName}", playlistName).replace("{visibility}", isPrivate ? lang.createplaylist.embed.private : lang.createplaylist.embed.public));
 
@@ -63,7 +63,7 @@ async function createPlaylist(client, interaction, lang) {
                 iconURL: musicIcons.alertIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
             .setTimestamp()
             .setDescription(lang.createplaylist.embed.errorDescription);
 
