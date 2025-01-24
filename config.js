@@ -8,7 +8,7 @@ module.exports = {
   setupFilePath: './commands/setup.json',
   commandsDir: './commands',  
   embedColor: "#1db954",
-  activityName: "", 
+  activityName: "V.1.2", 
   activityType: "",  // Available activity types : LISTENING , PLAYING
   SupportServer: "https://discord.gg/QHzdUj2VqN",
   embedTimeout: 5, 
