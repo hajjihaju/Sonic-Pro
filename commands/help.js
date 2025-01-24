@@ -55,7 +55,7 @@ module.exports = {
             }).join('\n') || lang.help.embed.noCommands
           }
         )
-        .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+        .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
         .setTimestamp();
 
       return interaction.reply({ embeds: [embed] });
