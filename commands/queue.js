@@ -71,7 +71,7 @@ async function queue(client, interaction, lang) {
             .setDescription(generateQueuePage(currentPage))
             .setFooter({
                 text: `Page ${currentPage} of ${totalPages} | ${lang.footer}`,
-                iconURL: musicIcons.heartIcon
+                iconURL: musicIcons.SonicIcon
             });
 
         await interaction.reply({ embeds: [queueEmbed] });
