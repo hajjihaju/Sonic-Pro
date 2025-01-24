@@ -9,7 +9,7 @@ module.exports = {
     options: [],
     run: async (client, interaction, lang) => {
         try {
-            const supportServerLink = "https://discord.gg/xQF9f9yUEM";
+            const supportServerLink = "https://discord.gg/uwVGgwHV3T";
             const githubLink = "https://github.com/GlaceYT";
             const replitLink = "https://replit.com/@GlaceYT";
             const youtubeLink = "https://www.youtube.com/@GlaceYT";
@@ -41,7 +41,7 @@ module.exports = {
                     url: config.SupportServer
                 })
                 .setDescription(lang.support.embed.errorDescription)
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon });
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon });
 
             await interaction.reply({ embeds: [errorEmbed], ephemeral: true });
         }
