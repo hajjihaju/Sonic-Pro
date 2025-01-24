@@ -1,5 +1,5 @@
 module.exports = {
-    footer: "Sonic V.1.2",
+    footer: "Sonic v1.2", 
     ping: {
       description: "Check the bot latency",
       response: "Pinging...",
