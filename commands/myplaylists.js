@@ -18,7 +18,7 @@ async function myPlaylists(client, interaction, lang) {
                     url: config.SupportServer
                 })
                 .setDescription(lang.myplaylists.embed.noPlaylistsFoundDescription)
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setTimestamp();
 
             await interaction.reply({ embeds: [noPlaylistsEmbed], ephemeral: true });
