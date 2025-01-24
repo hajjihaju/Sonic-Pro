@@ -18,7 +18,7 @@ async function deletePlaylist(client, interaction, lang) {
                     url: config.SupportServer
                 })
                 .setDescription(lang.deleteplaylist.embed.playlistNotFoundDescription)
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setTimestamp();
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -34,7 +34,7 @@ async function deletePlaylist(client, interaction, lang) {
                     url: config.SupportServer
                 })
                 .setDescription(lang.deleteplaylist.embed.accessDeniedDescription)
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setTimestamp();
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -51,7 +51,7 @@ async function deletePlaylist(client, interaction, lang) {
                     url: config.SupportServer
                 })
                 .setDescription(lang.deleteplaylist.embed.playlistNotFoundDescription)
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setTimestamp();
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -66,7 +66,7 @@ async function deletePlaylist(client, interaction, lang) {
                 url: config.SupportServer
             })
             .setDescription(lang.deleteplaylist.embed.playlistDeletedDescription.replace("{playlistName}", playlistName))
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
             .setTimestamp();
 
         await interaction.reply({ embeds: [embed] });
@@ -79,7 +79,7 @@ async function deletePlaylist(client, interaction, lang) {
                 iconURL: musicIcons.alertIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
             .setTimestamp()
             .setDescription(lang.deleteplaylist.embed.errorDescription);
 
