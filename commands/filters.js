@@ -29,7 +29,7 @@ async function filters(client, interaction, lang) {
                     iconURL: musicIcons.alertIcon,
                     url: config.SupportServer
                 })
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setDescription(lang.filters.embed.wrongChannel);
 
             await interaction.reply({ embeds: [embed], ephemeral: true });
@@ -89,7 +89,7 @@ async function filters(client, interaction, lang) {
                 iconURL: musicIcons.alertIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
             .setDescription(lang.filters.embed.errorProcessing);
 
         if (interaction.replied || interaction.deferred) {
