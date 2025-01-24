@@ -116,7 +116,7 @@ async function playCustomPlaylist(client, interaction, lang) {
                 url: config.SupportServer
             })
             .setDescription(lang.playCustomPlaylist.embed.playlistPlaying.replace("{playlistName}", playlistName))
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon });
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon });
 
         await interaction.followUp({ embeds: [embed] });
 
