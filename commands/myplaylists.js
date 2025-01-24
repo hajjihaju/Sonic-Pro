@@ -49,7 +49,7 @@ async function myPlaylists(client, interaction, lang) {
                     url: config.SupportServer
                 })
                 .setDescription(description)
-                .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+                .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
                 .setTimestamp();
         });
 
@@ -65,7 +65,7 @@ async function myPlaylists(client, interaction, lang) {
                 iconURL: musicIcons.alertIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: lang.footer, iconURL: musicIcons.heartIcon })
+            .setFooter({ text: lang.footer, iconURL: musicIcons.SonicIcon })
             .setTimestamp()
             .setDescription(lang.myplaylists.embed.errorDescription);
 
