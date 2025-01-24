@@ -21,14 +21,14 @@ module.exports = {
         .setAuthor({
           name: lang.ping.embed.title,
           iconURL: musicIcons.pingIcon,
-          url: "https://discord.gg/xQF9f9yUEM"
+          url: "https://discord.gg/QHzdUj2VqN"
         })
         .setDescription(
           `${lang.ping.embed.responseTime.replace("{latency}", latency)}
           \n${lang.ping.embed.websocketPing.replace("{ping}", websocketPing)}
           \n${lang.ping.embed.uptime.replace("{uptime}", formatUptime(client.uptime))}`
         )
-        .setFooter({ text: lang.ping.embed.footer, iconURL: musicIcons.heartIcon })
+        .setFooter({ text: lang.ping.embed.footer, iconURL: musicIcons.SonicIcon })
         .setTimestamp();
 
       return interaction.editReply({ content: null, embeds: [embed] }).catch(e => {
