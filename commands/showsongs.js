@@ -26,7 +26,7 @@ async function showSongs(client, interaction, lang) {
 
         if (playlist.isPrivate && playlist.userId !== userId) {
             const embed = new EmbedBuilder()
-                .setColor('#ff0000')
+                .setColor('#075e6e')
                 .setAuthor({ 
                     name: lang.showsongs.embed.accessDenied, 
                     iconURL: musicIcons.alertIcon,
@@ -47,7 +47,7 @@ async function showSongs(client, interaction, lang) {
 
         if (songChunks.length === 0) {
             const embed = new EmbedBuilder()
-                .setColor('#00ff00')
+                .setColor('#075e6e')
                 .setAuthor({ 
                     name: lang.showsongs.embed.songsInPlaylist.replace("{playlistName}", playlistName), 
                     iconURL: musicIcons.playlistIcon,
@@ -66,7 +66,7 @@ async function showSongs(client, interaction, lang) {
                 .join('\n');
 
             const embed = new EmbedBuilder()
-                .setColor('#00ff00')
+                .setColor('#075e6e')
                 .setAuthor({ 
                     name: lang.showsongs.embed.songsInPlaylistPage.replace("{playlistName}", playlistName).replace("{currentPage}", index + 1).replace("{totalPages}", songChunks.length), 
                     iconURL: musicIcons.playlistIcon,
