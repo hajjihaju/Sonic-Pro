@@ -16,9 +16,9 @@ module.exports = {
   nodes: [
     {
       name: "Koi Node V4",
-      password: "prplmoe.me",
-      host: "lavav4.prplmoe.me",
-      port: 1118,
+      password: "jmlitev4",
+      host: "109.176.17.107",
+      port: 20003,
       secure: false
     },
     {
@@ -37,9 +37,9 @@ module.exports = {
     },
     { 
       name: "saher",
-      password: "saher.inzeworld.com",
-      host: "lava.inzeworld.com",
-      port: 3128,
+      password: "freemenahimilta",
+      host: "lava-v4.nextgencoders.xyz",
+      port: 2333,
       secure: false
     }
   ]
