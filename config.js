@@ -37,8 +37,8 @@ module.exports = {
     },
     { 
       name: "saher",
-      password: "freemenahimilta",
-      host: "lava-v4.nextgencoders.xyz",
+      password: "youshallnotpass",
+      host: "lavalink.clxud.dev",
       port: 2333,
       secure: false
     }
