@@ -14,14 +14,7 @@ module.exports = {
   embedTimeout: 5, 
   errorLog: "", 
   nodes: [
-    {
-      name: "Koi Node V4",
-      password: "jmlitev4",
-      host: "109.176.17.107",
-      port: 20003,
-      secure: false
-    },
-    {
+{
       name: "INZEWORLD.COM (DE)",
       password: "saher.inzeworld.com",
       host: "lava.inzeworld.com",
@@ -37,9 +30,9 @@ module.exports = {
     },
     { 
       name: "saher",
-      password: "youshallnotpass",
-      host: "lavalink.clxud.dev",
-      port: 2333,
+      password: "saher.inzeworld.com",
+      host: "lava.inzeworld.com",
+      port: 3128,
       secure: false
     }
   ]
