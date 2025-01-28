@@ -275,6 +275,9 @@ module.exports = {
       noPermission: "You don't have permission to use this command.",
       generalError: "- Error: {error}"
     }
-  };
-
+  },
+    "seek": {
+        "description": "Seeks to a specified time in the currently playing track"
+    }
+};
   
