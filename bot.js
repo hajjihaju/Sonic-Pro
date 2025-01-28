@@ -22,46 +22,38 @@ client.on("ready", () => {
     console.log(`${colors.cyan}[ TIME ]${colors.reset} ${colors.gray}${new Date().toISOString().replace('T', ' ').split('.')[0]}${colors.reset}`);
     client.riffy.init(client.user.id);
 });
+client.config = config;
 
 fs.readdir("./events", (_err, files) => {
-    files.forEach((file) => {
-        if (!file.endsWith(".js")) return;
-        const event = require(`./events/${file}`);
-        let eventName = file.split(".")[0]; 
-        client.on(eventName, event.bind(null, client));
-        delete require.cache[require.resolve(`./events/${file}`)];
-    });
+  files.forEach((file) => {
+    if (!file.endsWith(".js")) return;
+    const event = require(`./events/${file}`);
+    let eventName = file.split(".")[0]; 
+    client.on(eventName, event.bind(null, client));
+    delete require.cache[require.resolve(`./events/${file}`)];
+  });
 });
 
-// Use Map for commands
-client.commands = new Map(); // Change from array to Map for better management
 
+client.commands = [];
 fs.readdir(config.commandsDir, (err, files) => {
-    if (err) throw err;
-    files.forEach(async (f) => {
-        try {
-            if (f.endsWith(".js")) {
-                let props = require(`${config.commandsDir}/${f}`);
-                client.commands.set(props.name, props); // Use set instead of push
-            }
-        } catch (err) {
-            console.log(err);
-        }
-    });
-});
-
-// Command execution logic
-client.on("messageCreate", (message) => {
-    if (message.author.bot || !message.content.startsWith(config.prefix)) return; // Ensure to check for bots and prefix
-
-    const args = message.content.slice(config.prefix.length).trim().split(/ +/);
-    const commandName = args.shift().toLowerCase();
-
-    const command = client.commands.get(commandName);
-    if (command) {
-        command.execute(message, args);
+  if (err) throw err;
+  files.forEach(async (f) => {
+    try {
+      if (f.endsWith(".js")) {
+        let props = require(`${config.commandsDir}/${f}`);
+        client.commands.push({
+          name: props.name,
+          description: props.description,
+          options: props.options,
+        });
+      }
+    } catch (err) {
+      console.log(err);
     }
+  });
 });
+
 
 client.on("raw", (d) => {
     const { GatewayDispatchEvents } = require("discord.js");
@@ -70,24 +62,23 @@ client.on("raw", (d) => {
 });
 
 client.login(config.TOKEN || process.env.TOKEN).catch((e) => {
-    console.log('\n' + '─'.repeat(40));
-    console.log(`${colors.magenta}${colors.bright}🔐 TOKEN VERIFICATION${colors.reset}`);
-    console.log('─'.repeat(40));
-    console.log(`${colors.cyan}[ TOKEN ]${colors.reset} ${colors.red}Authentication Failed ❌${colors.reset}`);
-    console.log(`${colors.gray}Error: Turn On Intents or Reset New Token${colors.reset}`);
+  console.log('\n' + '─'.repeat(40));
+  console.log(`${colors.magenta}${colors.bright}🔐 TOKEN VERIFICATION${colors.reset}`);
+  console.log('─'.repeat(40));
+  console.log(`${colors.cyan}[ TOKEN ]${colors.reset} ${colors.red}Authentication Failed ❌${colors.reset}`);
+  console.log(`${colors.gray}Error: Turn On Intents or Reset New Token${colors.reset}`);
 });
-
 connectToDatabase().then(() => {
-    console.log('\n' + '─'.repeat(40));
-    console.log(`${colors.magenta}${colors.bright}🕸️  DATABASE STATUS${colors.reset}`);
-    console.log('─'.repeat(40));
-    console.log(`${colors.cyan}[ DATABASE ]${colors.reset} ${colors.green}MongoDB Online ✅${colors.reset}`);
+  console.log('\n' + '─'.repeat(40));
+  console.log(`${colors.magenta}${colors.bright}🕸️  DATABASE STATUS${colors.reset}`);
+  console.log('─'.repeat(40));
+  console.log(`${colors.cyan}[ DATABASE ]${colors.reset} ${colors.green}MongoDB Online ✅${colors.reset}`);
 }).catch((err) => {
-    console.log('\n' + '─'.repeat(40));
-    console.log(`${colors.magenta}${colors.bright}🕸️  DATABASE STATUS${colors.reset}`);
-    console.log('─'.repeat(40));
-    console.log(`${colors.cyan}[ DATABASE ]${colors.reset} ${colors.red}Connection Failed ❌${colors.reset}`);
-    console.log(`${colors.gray}Error: ${err.message}${colors.reset}`);
+  console.log('\n' + '─'.repeat(40));
+  console.log(`${colors.magenta}${colors.bright}🕸️  DATABASE STATUS${colors.reset}`);
+  console.log('─'.repeat(40));
+  console.log(`${colors.cyan}[ DATABASE ]${colors.reset} ${colors.red}Connection Failed ❌${colors.reset}`);
+  console.log(`${colors.gray}Error: ${err.message}${colors.reset}`);
 });
 
 const express = require("express");
