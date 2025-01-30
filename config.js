@@ -12,7 +12,7 @@ module.exports = {
   activityType: "",  // Available activity types : LISTENING , PLAYING
   SupportServer: "https://discord.gg/QHzdUj2VqN",
   embedTimeout: 5, 
-  errorLog: "https://discord.com/channels/1198721061706027048/1334547456884736000", 
+  errorLog: "1334547456884736000", 
  nodes: [
     {
       name: "Catfein ID",
