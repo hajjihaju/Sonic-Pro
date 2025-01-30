@@ -12,15 +12,8 @@ module.exports = {
   activityType: "",  // Available activity types : LISTENING , PLAYING
   SupportServer: "https://discord.gg/QHzdUj2VqN",
   embedTimeout: 5, 
-  errorLog: "", 
-  nodes: [
-{
-      name: "INZEWORLD.COM (DE)",
-      password: "saher.inzeworld.com",
-      host: "lava.inzeworld.com",
-      port: 3128,
-      secure: false
-    },
+  errorLog: "https://discord.com/channels/1198721061706027048/1334547456884736000", 
+ nodes: [
     {
       name: "Catfein ID",
       password: "catfein",
