@@ -27,6 +27,13 @@ module.exports = {
       host: "lava.inzeworld.com",
       port: 3128,
       secure: false
+    },
+    {
+      name: "saher",
+      password: "freemenahimilta",
+      host: "lava-v4.nextgencoders.xyz",
+      port: 2333,
+      secure: false
     }
   ]
 }
