@@ -74,7 +74,7 @@ function initializePlayer(client) {
         const trackUri = track.info.uri;
         const requester = requesters.get(trackUri);
 
-        try {
+       try {
             const musicard = await Dynamic({
                 thumbnailImage: track.info.thumbnail || 'https://example.com/default_thumbnail.png',
                 backgroundColor: '#0c1f1d',
@@ -108,7 +108,7 @@ function initializePlayer(client) {
                 `- **Requester:** ${requester}\n` +
                 `- **Source:** ${track.info.sourceName}\n` + '**- Controls :**\n 🔁 `Loop`, ❌ `Disable`, ⏭️ `Skip`, 📜 `Queue`, 🗑️ `Clear`\n ⏹️ `Stop`, ⏸️ `Pause`, ▶️ `Resume`, 🔊 `Vol +`, 🔉 `Vol -`')
             .setImage('attachment://musicard.png')
-            .setColor('#FF7A00');
+            .setColor('#20514c');
 
           
             const actionRow1 = createActionRow1(false);
@@ -166,7 +166,7 @@ function initializePlayer(client) {
         } catch (error) {
             console.error("Error handling autoplay:", error);
             player.destroy();
-            await channel.send("⚠️ **An error occurred. Disconnecting...**");
+            await channel.send("👾**Queue Empty! Disconnecting...**");
         }
     });
     
