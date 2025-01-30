@@ -34,6 +34,13 @@ module.exports = {
       host: "lavalink.anantix.network",
       port: 2335,
       secure: false
+     },
+     { 
+      name: "saher3",
+      password: "youshallnotpass",
+      host: "lavalink.clxud.dev",
+      port: 2333,
+      secure: false
     }
   ]
 }
