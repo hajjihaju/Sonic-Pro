@@ -29,10 +29,10 @@ module.exports = {
       secure: false
     },
     {
-      name: "saher",
-      password: "freemenahimilta",
-      host: "lava-v4.nextgencoders.xyz",
-      port: 2333,
+      name: "saher2",
+      password: "pg6|(}7fuD_:7d#QQq?9",
+      host: "lavalink.anantix.network",
+      port: 2335,
       secure: false
     }
   ]
