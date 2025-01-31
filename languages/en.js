@@ -275,6 +275,18 @@ module.exports = {
       noPermission: "You don't have permission to use this command.",
       generalError: "- Error: {error}"
     }
-  };
+  },
+    "seek": {
+    "embed": {
+        "noActivePlayer": "Error",
+        "noActivePlayerDescription": "- No active player found or no song is playing.",
+        "seekUpdated": "Seek Updated!",
+        "seekUpdatedDescription": "- Moved to **{time} seconds** in the song.",
+        "error": "Error",
+        "errorDescription": "An error occurred while seeking."
+    },
+    "invalidTimeError": "Invalid time! Please provide a valid timestamp within the song duration."
+}
+};
 
   
