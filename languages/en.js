@@ -286,7 +286,7 @@ module.exports = {
         "errorDescription": "An error occurred while seeking."
     },
     "invalidTimeError": "Invalid time! Please provide a valid timestamp within the song duration."
-}
+  }
 };
 
   
