@@ -14,32 +14,18 @@ module.exports = {
   embedTimeout: 5, 
   errorLog: "1334547456884736000", 
  nodes: [
-    {
-      name: "Catfein ID",
-      password: "catfein",
-      host: "lava.catfein.com",
-      port: 4000,
-      secure: false
-    },
-    { 
-      name: "saher",
-      password: "saher.inzeworld.com",
-      host: "lava.inzeworld.com",
-      port: 3128,
+     {
+      name: "Koi Node V4",
+      password: "prplmoe.me",
+      host: "lavav4.prplmoe.me",
+      port: 1118,
       secure: false
     },
     {
-      name: "saher2",
-      password: "pg6|(}7fuD_:7d#QQq?9",
-      host: "lavalink.anantix.network",
-      port: 2335,
-      secure: false
-     },
-     { 
-      name: "saher3",
-      password: "youshallnotpass",
-      host: "lavalink.clxud.dev",
-      port: 2333,
+      name: "ChalresNaig Node",
+      password: "NAIGLAVA-dash.techbyte.host",
+      host: "lavahatry4.techbyte.host",
+      port: 3000,
       secure: false
     }
   ]
