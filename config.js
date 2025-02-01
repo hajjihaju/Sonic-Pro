@@ -99,13 +99,6 @@ module.exports = {
       secure: false     
     },
     {
-      name: "sonic8",
-      password: "freemenahimilta",
-      host: "lava-v4.nextgencoders.xyz",
-      port: 23333,
-      secure: false 
-    },
-    {
       name: "sonic9",
       password: "https://alya-project.me/",
       host: "lavalink.alya-project.me",
