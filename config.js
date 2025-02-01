@@ -44,9 +44,9 @@ module.exports = {
     },
     {
       name: "saher00885",
-      password: "youshallnotpass",
-      host: "167.179.133.36",
-      port: 8059,
+      password: "jompo",
+      host: "lavalink-legacy.jompo.cloud",
+      port: 2333,
       secure: false
     },
     {
@@ -58,10 +58,24 @@ module.exports = {
     },
     {
       name: "sonic2",
-      password: "jompo",
-      host: "lavalink.jompo.cloud",
-      port: 2333,
+      password: "lunarnodes.xyz",
+      host: "ether.lunarnodes.xyz",
+      port: 6969,
       secure: false
+    },
+    {
+      name: "sonic3",
+      password: "youshallnotpass",
+      host: "lavalink.jirayu.net",
+      port: 13592,
+      secure: false   
+    },
+    {
+      name: "sonic4",
+      password: "NAI-dash.techbyte.host",
+      host: "lavalink01.techbyte.host",
+      port: 2036,
+      secure: false  
     }
   ]
 }
