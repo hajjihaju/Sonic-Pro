@@ -111,6 +111,13 @@ module.exports = {
       host: "lavalink.alya-project.me",
       port: 2333,
       secure: false
+    },
+    {
+      name: "sonic10",
+      password: "https://dsc.gg/ajidevserver",
+      host: "lava-v3.ajieblogs.eu.org",
+      port: 443,
+      secure: true
     }
   ]
 }
