@@ -42,11 +42,53 @@ module.exports = {
       port: 443,
       secure: true
     },
-   {
+    {
       name: "saher9",
       password: "jompo",
       host: "lavalink.jompo.cloud",
       port: 2333,
+      secure: false
+   },
+   {
+      name: "saher00",
+      password: "lunarnodes.xyz",
+      host: "ether.lunarnodes.xyz",
+      port: 6969,
+      secure: false
+   },
+   {
+      name: "saher00",
+      password: "lunarnodes.xyz",
+      host: "ether.lunarnodes.xyz",
+      port: 6969,
+      secure: false
+   },
+   {
+      name: "saher001",
+      password: "youshallnotpass",
+      host: "lavalink.jirayu.net",
+      port: 13592,
+      secure: false
+   },
+   {
+      name: "saher002",
+      password: "NAI-dash.techbyte.host",
+      host: "lavalink01.techbyte.host",
+      port: 2036,
+      secure: false
+   },
+   {
+      name: "saher005",
+      password: "albinhakanson.se",
+      host: "lavalink1.albinhakanson.se",
+      port: 1141,
+      secure: false
+   },
+   {
+      name: "saher004",
+      password: "youshallnotpass",
+      host: "nyc01.jxshua.dev",
+      port: 4000,
       secure: false
   ]
 }
