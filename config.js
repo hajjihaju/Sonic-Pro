@@ -34,13 +34,6 @@ module.exports = {
       host: "lavalink.jirayu.net",
       port: 13592,
       secure: false
-   },
-   {
-      name: "FHJKKS",
-      password: "youshallnotpass",
-      host: "nyc01.jxshua.dev",
-      port: 4000,
-      secure: false
    };
   ]
 }
