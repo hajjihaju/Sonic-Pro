@@ -40,7 +40,7 @@ module.exports = {
       password: "horizxon.tech",
       host: "v4.lavalink.rocks",
       port: 443,
-      secure: false
+      secure: true
     }
   ]
 }
