@@ -44,9 +44,9 @@ module.exports = {
     },
     {
       name: "saher00885",
-      password: "jompo",
-      host: "lavalink-legacy.jompo.cloud",
-      port: 2333,
+      password: "albinhakanson.se",
+      host: "lavalink1.albinhakanson.se",
+      port: 1141,
       secure: false
     },
     {
@@ -76,6 +76,20 @@ module.exports = {
       host: "lavalink01.techbyte.host",
       port: 2036,
       secure: false  
+    },
+    {
+      name: "sonic5",
+      password: "youshallnotpass",
+      host: "nyc01.jxshua.dev",
+      port: 4000,
+      secure: false   
+    },
+    {
+      name: "sonic6",
+      password: "reedrousfreenode",
+      host: "37.27.114.136",
+      port: 25065,
+      secure: false     
     }
   ]
 }
