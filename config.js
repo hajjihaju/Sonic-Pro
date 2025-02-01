@@ -43,13 +43,6 @@ module.exports = {
       secure: false
    },
    {
-      name: "saher00",
-      password: "lunarnodes.xyz",
-      host: "ether.lunarnodes.xyz",
-      port: 6969,
-      secure: false
-   },
-   {
       name: "saher001",
       password: "youshallnotpass",
       host: "lavalink.jirayu.net",
