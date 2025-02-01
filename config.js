@@ -90,5 +90,6 @@ module.exports = {
       host: "nyc01.jxshua.dev",
       port: 4000,
       secure: false
+   };
   ]
 }
