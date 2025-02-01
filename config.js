@@ -36,13 +36,6 @@ module.exports = {
       secure: false
     },
     {
-      name: "saher5",
-      password: "horizxon.tech",
-      host: "v4.lavalink.rocks",
-      port: 443,
-      secure: true
-    },
-    {
       name: "saher9",
       password: "jompo",
       host: "lavalink.jompo.cloud",
