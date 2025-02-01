@@ -41,6 +41,13 @@ module.exports = {
       host: "149.102.145.188",
       port: 3003,
       secure: false
+    },
+    {
+      name: "saher00885",
+      password: "youshallnotpass",
+      host: "167.179.133.36",
+      port: 8059,
+      secure: false
     }
   ]
 }
