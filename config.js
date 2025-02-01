@@ -28,13 +28,6 @@ module.exports = {
       port: 4000,
       secure: false
     },
-    { 
-      name: "saher",
-      password: "saher.inzeworld.com",
-      host: "lava.inzeworld.com",
-      port: 3128,
-      secure: false
-    },
     {
       name: "saher9",
       password: "jompo",
