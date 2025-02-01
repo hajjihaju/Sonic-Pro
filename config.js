@@ -41,6 +41,12 @@ module.exports = {
       host: "v4.lavalink.rocks",
       port: 443,
       secure: true
-    }
+    },
+   {
+      name: "saher9",
+      password: "jompo",
+      host: "lavalink.jompo.cloud",
+      port: 2333,
+      secure: false
   ]
 }
