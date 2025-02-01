@@ -57,10 +57,10 @@ module.exports = {
       secure: false
     },
     {
-      name: "sonic2",
-      password: "lunarnodes.xyz",
-      host: "ether.lunarnodes.xyz",
-      port: 6969,
+      name: "Koi Node V4",
+      password: "prplmoe.me",
+      host: "lavav4.prplmoe.me",
+      port: 1118,
       secure: false
     },
     {
@@ -71,10 +71,10 @@ module.exports = {
       secure: false   
     },
     {
-      name: "sonic4",
-      password: "NAI-dash.techbyte.host",
-      host: "lavalink01.techbyte.host",
-      port: 2036,
+      name: "Public Lavalink v4 NonSSL",
+      password: "https://dsc.gg/ajidevserver",
+      host: "lava-v4.ajieblogs.eu.org",
+      port: 80,
       secure: false  
     },
     {
@@ -113,11 +113,11 @@ module.exports = {
       secure: false
     },
     {
-      name: "sonic10",
-      password: "https://dsc.gg/ajidevserver",
-      host: "lava-v3.ajieblogs.eu.org",
-      port: 443,
-      secure: true
+      name: "ChalresNaig Node",
+      password: "NAIGLAVA-dash.techbyte.host",
+      host: "lavahatry4.techbyte.host",
+      port: 3000,
+      secure: false
     }
   ]
 }
