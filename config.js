@@ -27,13 +27,6 @@ module.exports = {
       host: "lava.catfein.com",
       port: 4000,
       secure: false
-    },
-    {
-      name: "saher9",
-      password: "jompo",
-      host: "lavalink.jompo.cloud",
-      port: 2333,
-      secure: false
    },
    {
       name: "saher001",
