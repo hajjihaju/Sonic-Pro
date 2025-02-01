@@ -97,6 +97,20 @@ module.exports = {
       host: "lavahatry4.techbyte.host",
       port: 3000,
       secure: false     
+    },
+    {
+      name: "sonic8",
+      password: "freemenahimilta",
+      host: "lava-v4.nextgencoders.xyz",
+      port: 2333,
+      secure: false 
+    },
+    {
+      name: "sonic9",
+      password: "https://alya-project.me/",
+      host: "lavalink.alya-project.me",
+      port: 2333,
+      secure: false
     }
   ]
 }
