@@ -90,6 +90,13 @@ module.exports = {
       host: "37.27.114.136",
       port: 25065,
       secure: false     
+    },
+    {
+      name: "sonic7",
+      password: "NAIGLAVA-dash.techbyte.host",
+      host: "lavahatry4.techbyte.host",
+      port: 3000,
+      secure: false     
     }
   ]
 }
