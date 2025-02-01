@@ -64,13 +64,6 @@ module.exports = {
       secure: false
    },
    {
-      name: "saher005",
-      password: "albinhakanson.se",
-      host: "lavalink1.albinhakanson.se",
-      port: 1141,
-      secure: false
-   },
-   {
       name: "saher004",
       password: "youshallnotpass",
       host: "nyc01.jxshua.dev",
