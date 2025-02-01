@@ -102,7 +102,7 @@ module.exports = {
       name: "sonic8",
       password: "freemenahimilta",
       host: "lava-v4.nextgencoders.xyz",
-      port: 2333,
+      port: 23333,
       secure: false 
     },
     {
@@ -110,7 +110,7 @@ module.exports = {
       password: "https://alya-project.me/",
       host: "lavalink.alya-project.me",
       port: 2333,
-      secure: true
+      secure: false
     },
     {
       name: "ChalresNaig Node",
