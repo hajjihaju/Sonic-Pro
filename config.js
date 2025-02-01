@@ -34,6 +34,6 @@ module.exports = {
       host: "lavalink.jirayu.net",
       port: 13592,
       secure: false
-   };
+    } 
   ]
 }
