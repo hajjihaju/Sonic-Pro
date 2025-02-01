@@ -36,13 +36,6 @@ module.exports = {
       secure: false
    },
    {
-      name: "saher002",
-      password: "NAI-dash.techbyte.host",
-      host: "lavalink01.techbyte.host",
-      port: 2036,
-      secure: false
-   },
-   {
       name: "saher004",
       password: "youshallnotpass",
       host: "nyc01.jxshua.dev",
