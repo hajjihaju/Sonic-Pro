@@ -34,6 +34,13 @@ module.exports = {
       host: "lava.inzeworld.com",
       port: 3128,
       secure: false
+    },
+    {
+      name: "saher5",
+      password: "horizxon.tech",
+      host: "v4.lavalink.rocks",
+      port: 443,
+      secure: false
     }
   ]
 }
