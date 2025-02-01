@@ -78,10 +78,10 @@ module.exports = {
       secure: false  
     },
     {
-      name: "sonic5",
-      password: "youshallnotpass",
-      host: "nyc01.jxshua.dev",
-      port: 4000,
+      name: "Muzykant v4",
+      password: "https://discord.gg/v6sdrD9kPh",
+      host: "lavalink_v4.muzykant.xyz",
+      port: 80,
       secure: false   
     },
     {
