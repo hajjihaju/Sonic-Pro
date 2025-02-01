@@ -48,6 +48,20 @@ module.exports = {
       host: "167.179.133.36",
       port: 8059,
       secure: false
+    },
+    {
+      name: "sa5665",
+      password: "youshallnotpass",
+      host: "150.136.71.221",
+      port: 5000,
+      secure: false
+    },
+    {
+      name: "sonic2",
+      password: "jompo",
+      host: "lavalink.jompo.cloud",
+      port: 2333,
+      secure: false
     }
   ]
 }
