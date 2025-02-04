@@ -111,6 +111,20 @@ module.exports = {
       host: "lavahatry4.techbyte.host",
       port: 3000,
       secure: false
+    },
+    {
+      name: "Sonic v44",
+      password: "pg6|(}7fuD_:7d#QQq?9",
+      host: "lavalink.anantix.network",
+      port: 2335,
+      secure: false
+    },
+        {
+      name: "Koi Node V4",
+      password: "prplmoe.me",
+      host: "lavav4.prplmoe.me",
+      port: 1118,
+      secure: false
     }
   ]
 }
