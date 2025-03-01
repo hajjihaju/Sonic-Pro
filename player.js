@@ -1,4 +1,4 @@
-const { Riffy } = require("riffy");
+const { Riffy, Player } = require("riffy");
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, ButtonStyle, AttachmentBuilder, PermissionsBitField } = require("discord.js");
 const { queueNames, requesters } = require("./commands/play");
 const { Dynamic } = require("musicard");
@@ -74,7 +74,7 @@ function initializePlayer(client) {
         const trackUri = track.info.uri;
         const requester = requesters.get(trackUri);
 
-       try {
+        try {
             const musicard = await Dynamic({
                 thumbnailImage: track.info.thumbnail || 'https://example.com/default_thumbnail.png',
                 backgroundColor: '#0c1f1d',
@@ -99,7 +99,7 @@ function initializePlayer(client) {
                 iconURL: musicIcons.playerIcon,
                 url: config.SupportServer
             })
-            .setFooter({ text: `Sonic v1.2`, iconURL: musicIcons.beats2Icon })
+            .setFooter({ text: `Sonic v1.2`, iconURL: musicIcons.SonicIcon })
             .setTimestamp()
             .setDescription(  
                 `- **Title:** [${track.info.title}](${track.info.uri})\n` +
@@ -108,7 +108,7 @@ function initializePlayer(client) {
                 `- **Requester:** ${requester}\n` +
                 `- **Source:** ${track.info.sourceName}\n` + '**- Controls :**\n 🔁 `Loop`, ❌ `Disable`, ⏭️ `Skip`, 📜 `Queue`, 🗑️ `Clear`\n ⏹️ `Stop`, ⏸️ `Pause`, ▶️ `Resume`, 🔊 `Vol +`, 🔉 `Vol -`')
             .setImage('attachment://musicard.png')
-            .setColor('#20514c');
+            .setColor('#FF7A00');
 
           
             const actionRow1 = createActionRow1(false);
@@ -246,7 +246,7 @@ async function handleInteraction(i, player, channel) {
             disableLoop(player, channel);
             break;
         case 'showQueue':
-            showQueue(channel);
+            showNowPlaying(channel, player);
             break;
         case 'clearQueue':
             player.queue.clear();
@@ -320,33 +320,14 @@ function disableLoop(player, channel) {
     sendEmbed(channel, "❌ **Loop is disabled!**");
 }
 
-function showQueue(channel) {
-    if (queueNames.length === 0) {
-        sendEmbed(channel, "The queue is empty.");
+function showNowPlaying(channel, player) {
+    if (!player || !player.current || !player.current.info) {
+        sendEmbed(channel, "🚫 **No song is currently playing.**");
         return;
     }
-    const queueChunks = [];
 
- 
-    for (let i = 1; i < queueNames.length; i += 10) {
-        const chunk = queueNames.slice(i, i + 10)
-            .map((song, index) => `${i + index}. ${formatTrack(song)}`)
-            .join('\n');
-        queueChunks.push(chunk);
-    }
-
-  
-    channel.send({
-        embeds: [new EmbedBuilder().setColor(config.embedColor).setDescription(nowPlaying)]
-    }).catch(console.error);
-
-  
-    queueChunks.forEach(async (chunk) => {
-        const embed = new EmbedBuilder()
-            .setColor(config.embedColor)
-            .setDescription(`📜 **Queue:**\n${chunk}`);
-        await channel.send({ embeds: [embed] }).catch(console.error);
-    });
+    const track = player.current.info;
+    sendEmbed(channel, `🎵 **Now Playing:** [${track.title}](${track.uri}) - ${track.author}`);
 }
 
 function createActionRow1(disabled) {
@@ -355,7 +336,7 @@ function createActionRow1(disabled) {
             new ButtonBuilder().setCustomId("loopToggle").setEmoji('🔁').setStyle(ButtonStyle.Secondary).setDisabled(disabled),
             new ButtonBuilder().setCustomId("disableLoop").setEmoji('❌').setStyle(ButtonStyle.Secondary).setDisabled(disabled),
             new ButtonBuilder().setCustomId("skipTrack").setEmoji('⏭️').setStyle(ButtonStyle.Secondary).setDisabled(disabled),
-            new ButtonBuilder().setCustomId("showQueue").setEmoji('📜').setStyle(ButtonStyle.Secondary).setDisabled(disabled),
+            new ButtonBuilder().setCustomId("showQueue").setEmoji('💎').setStyle(ButtonStyle.Secondary).setDisabled(disabled),
             new ButtonBuilder().setCustomId("clearQueue").setEmoji('🗑️').setStyle(ButtonStyle.Secondary).setDisabled(disabled)
         );
 }
