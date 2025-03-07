@@ -5,6 +5,8 @@ module.exports = {
   language: "en",
   ownerID: ["921743618316836875", ""], 
   mongodbUri : "mongodb+srv://muhammed:muhsin121@cluster0.aod2oa4.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+  spotifyClientId : "d17df4bdeeff41f4acfcc4aa023fc86e",
+  spotifyClientSecret : "b9c64e353a1f4c5a99e29745c25dfbf1",
   setupFilePath: './commands/setup.json',
   commandsDir: './commands',  
   embedColor: "#245c5c",
